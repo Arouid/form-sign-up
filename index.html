@@ -1,9 +1,96 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="plants">
+        <div class="shadowbox">
+          <div class="odin-icon"></div>
+          <p class="odin">ODIN</p>
+        </div>
+      </div>
+      <div class="form-side">
+        <div class="behind-form">
+          <div class="paragraphs">
+            <p class="first_paragraph">
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+            </p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <br />
+            <p class="last_paragraph">You <em>know</em> you want to.</p>
+          </div>
+          <section class="form">
+            <form>
+              <section class="columnOne">
+                <h2>Let's do this!</h2>
+                <p class="firstname">
+                  <label for="firstname">First name:</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="firstname"
+                    required
+                    pattern="[a-zA-Z0-9]+"
+                  />
+                </p>
+                <p class="number">
+                  <label for="number">Phone number:</label>
+                  <input
+                    type="number"
+                    name="Phone"
+                    id="number"
+                    required
+                    pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                  />
+                </p>
+                <p class="password">
+                  <label for="password">Password:</label>
+                  <input
+                    type="text"
+                    name="pwd"
+                    id="password"
+                    required
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                </p>
+              </section>
+              <section class="columnTwo">
+                <p class="lastname">
+                  <label for="lastname">Last name:</label>
+                  <input type="text" name="last_name" id="lastname" required />
+                </p>
+                <p class="email">
+                  <label for="mail">Email:</label>
+                  <input type="email" name="mail" id="mail" required />
+                </p>
+                <p class="confirm-pass">
+                  <label for="confirm-pass">Confirm password:</label>
+                  <input
+                    type="text"
+                    name="confirm-pwd"
+                    id="confirm-pass"
+                    required
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                </p>
+              </section>
+            </form>
+          </section>
+          <div class="bottom">
+            <button type="submit">Create Account</button>
+            <br />
+            <p class="account-p">
+              Already have an account? <a href="/login.html">Log in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
