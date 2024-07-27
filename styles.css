@@ -1,6 +1,6 @@
 @font-face {
   font-family: "odin";
-  src: url(/fonts/Norse-Bold.otf);
+  src: url(fonts/Norse-Bold.otf);
 }
 
 * {
@@ -29,7 +29,7 @@ body {
   align-items: center;
   height: 100vh;
   flex: 2;
-  background-image: url("/images/plants.jpg");
+  background-image: url("images/plants.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -69,7 +69,7 @@ body {
 }
 
 .odin-icon {
-  content: url(/images/odin-lined.png);
+  content: url(images/odin-lined.png);
   flex: 1;
   object-fit: contain;
   width: 7rem;
